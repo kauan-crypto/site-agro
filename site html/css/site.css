@@ -1,0 +1,62 @@
+
+:root {
+--verde-agro: #2d5a27;
+--bege-fundo: #f8f9fa;
+--laranja-destaque: #f39c12;
+}
+
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bege-fundo);
+color: #333;
+overflow-x: hidden; 
+}
+
+
+.hero-section {
+min-height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.card {
+transition: transform 0.3s ease, shadow 0.3s ease;
+border: none !important;
+}
+
+.card:hover {
+transform: translateY(-10px); 
+box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+@media (max-width: 768px) {
+.hero-section h1 {
+font-size: 2rem;
+    }
+    
+.navbar-brand {
+font-size: 1.2rem;
+    }
+}
+
+
+.text-agro {
+color: var(--verde-agro);
+}
+
+.bg-agro {
+background-color: var(--verde-agro) !important;
+}
+
+.btn-agro {
+ background-color: var(--laranja-destaque);
+color: white;
+border-radius: 25px;
+padding: 10px 25px;
+}
